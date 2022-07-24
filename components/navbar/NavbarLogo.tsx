@@ -21,7 +21,7 @@ const NavbarLogo: FC<Props> = ({ variant, className }) => {
   const isTestNet = CHAIN_ID === '4'
 
   return (
-    <div style={{border:'1px solid red'}}><Link href={NAVBAR_LOGO_LINK || '/'}>
+    <Link href={NAVBAR_LOGO_LINK || '/'}>
       <a
         className={`relative inline-flex flex-none items-center gap-1 ${className}`}
       >
@@ -53,7 +53,7 @@ const NavbarLogo: FC<Props> = ({ variant, className }) => {
           </div>
         )}
       </a>
-    </Link></div>
+    </Link>
   )
 }
 
